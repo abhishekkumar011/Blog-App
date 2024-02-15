@@ -3,5 +3,6 @@ import Footer from "./footer/Footer";
 import MyButton from "./button/MyButton";
 import LogoutBtn from "./header/LogoutBtn";
 import Header from "./header/Header";
+import MyInput from "./input/MyInput"
 
-export { Container, Footer, MyButton, LogoutBtn, Header };
+export { Container, Footer, MyButton, LogoutBtn, Header, MyInput };
