@@ -56,7 +56,8 @@ const Header = () => {
                 <li key={item.name}>
                   <MyButton
                     onClick={() => navigate(item.slug)}
-                    classname="bg-transparent text-gray-700 hover:rounded-sm hover:text-white"
+                    classname="bg-transparent hover:rounded-sm hover:text-white"
+                    textColor="text-gray-900"
                   >
                     {item.name}
                   </MyButton>
