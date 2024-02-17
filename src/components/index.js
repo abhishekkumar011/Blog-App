@@ -5,7 +5,8 @@ import LogoutBtn from "./header/LogoutBtn";
 import Header from "./header/Header";
 import MyInput from "./input/MyInput";
 import Select from "./select/Select";
-import AuthLayout from "./authLayout/AuthLayout"
+import AuthLayout from "./authLayout/AuthLayout";
+import Signup from "./signup/Signup";
 
 export {
   Container,
@@ -16,4 +17,5 @@ export {
   MyInput,
   Select,
   AuthLayout,
+  Signup,
 };
