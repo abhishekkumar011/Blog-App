@@ -7,6 +7,7 @@ import MyInput from "./input/MyInput";
 import Select from "./select/Select";
 import AuthLayout from "./authLayout/AuthLayout";
 import Signup from "./signup/Signup";
+import Login from "./login/Login";
 
 export {
   Container,
@@ -18,4 +19,5 @@ export {
   Select,
   AuthLayout,
   Signup,
+  Login,
 };
