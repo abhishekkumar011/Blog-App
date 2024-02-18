@@ -92,7 +92,7 @@ export class DatabaseService {
   }
 
   // File services
-  async uploadFile() {
+  async uploadFile(file) {
     try {
       return await this.storage.createFile(
         conf.appwriteBucketID,
