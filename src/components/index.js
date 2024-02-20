@@ -10,6 +10,7 @@ import Signup from "./signup/Signup";
 import Login from "./login/Login";
 import RTE from "./editor/RTE";
 import PostForm from "./post-form/PostForm";
+import PostCard from "./postCard/PostCard";
 
 export {
   Container,
@@ -24,4 +25,5 @@ export {
   Login,
   RTE,
   PostForm,
+  PostCard,
 };
