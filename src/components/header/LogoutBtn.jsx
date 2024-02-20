@@ -12,7 +12,7 @@ const LogoutBtn = () => {
       dispatch(logout());
     });
   };
-  return <MyButton onClick={logoutHandler}>Logout</MyButton>;
+  return <MyButton classname="ml-2" onClick={logoutHandler}>Logout</MyButton>;
 };
 
 export default LogoutBtn;
