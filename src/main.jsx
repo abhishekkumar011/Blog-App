@@ -1,18 +1,23 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
+import App from "./App.jsx";
 import store from "./store/store.js";
+import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { AuthLayout } from "./components/index.js";
-import { Login, Signup } from "./pages/index.js";
+import { Home, Login, Signup } from "./pages/index.js";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+
       {
         path: "/signup",
         element: (
