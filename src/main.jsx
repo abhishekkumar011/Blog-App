@@ -5,7 +5,15 @@ import store from "./store/store.js";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { AuthLayout } from "./components/index.js";
-import { AddPost, AllPost, Home, Login, Post, Signup } from "./pages/index.js";
+import {
+  AddPost,
+  AllPost,
+  EditPost,
+  Home,
+  Login,
+  Post,
+  Signup,
+} from "./pages/index.js";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -50,6 +58,15 @@ const router = createBrowserRouter([
         element: (
           <AuthLayout authentication>
             <AllPost />
+          </AuthLayout>
+        ),
+      },
+
+      {
+        path: "/edit-post/:slug",
+        element: (
+          <AuthLayout>
+            <EditPost />
           </AuthLayout>
         ),
       },
