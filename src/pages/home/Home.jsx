@@ -5,22 +5,19 @@ import { useSelector } from "react-redux";
 import { Container } from "../../components";
 
 const Home = () => {
-  
   const authStatus = useSelector((state) => state.auth.status);
 
   return (
     <Container>
       <div className="flex justify-center">
-        <div className="w-3/4 mt-16 flex border-2 rounded-md shadow-lg">
+        <div className="w-3/4 mt-16 flex border-2 rounded-md shadow-lg md:flex-row flex-col">
           {/* left  */}
-          <div className="w-1/3 pt-5 pl-5">
-            <div className="rounded-lg">
-              <img className="w-72" src={man} alt="" />
-            </div>
+          <div className="lg:w-1/3 md:w-1/3 sm:w-full pt-5 pl-5 flex justify-center items-center lg:block border-b-2">
+            <img className="w-44 md:w-72" src={man} alt="" />
           </div>
 
           {/* Right */}
-          <div className="w-2/3 p-10">
+          <div className="md:w-2/3 p-10 sm:w-full">
             <div>
               <h1 className="text-2xl font-bold text-center mb-5 font-mono text-gray-800">
                 Blog APP
@@ -38,11 +35,11 @@ const Home = () => {
             </div>
 
             {authStatus ? (
-              <p className="mt-28 font-semibold text-gray-700">
+              <p className="mt-7 lg:mt-28 font-semibold text-gray-700">
                 Welcome to our website
               </p>
             ) : (
-              <p className="mt-28 flex gap-1 font-semibold text-gray-700">
+              <p className="mt-7 lg:mt-28 flex gap-1 font-semibold text-gray-700">
                 Login to read Post -
                 <Link
                   to={"/login"}
