@@ -82,10 +82,10 @@ const PostForm = ({ post }) => {
     <Container>
       <form
         onSubmit={handleSubmit(submit)}
-        className="p-5 border-2 border-black/20 rounded-md mt-5 shadow-lg flex flex-wrap"
+        className="p-5 border-2 border-black/20 rounded-md mt-5 shadow-lg flex flex-wrap flex-col md:flex-row"
       >
         {/* Left Part */}
-        <div className="w-2/3 px-2">
+        <div className="w-full md:w-2/3 px-2">
           <MyInput
             label="Title"
             placeholder="Enter the title"
@@ -112,7 +112,7 @@ const PostForm = ({ post }) => {
           />
         </div>
         {/* Right Part */}
-        <div className="w-1/3 px-2">
+        <div className="w-full md:w-1/3 px-2 mt-4 md:mt-0">
           <MyInput
             label="Featured Image"
             type="file"
