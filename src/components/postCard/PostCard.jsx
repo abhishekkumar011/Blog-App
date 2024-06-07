@@ -5,12 +5,12 @@ import databaseService from "../../appwrite/config";
 const PostCard = ({ $id, title, featuredImage }) => {
   return (
     <Link to={`/post/${$id}`}>
-      <div className="w-full border-2 shadow-md rounded-xl p-4">
-        <div className="w-full justify-center mb-4">
+      <div className="w-64 shadow-md h-56 rounded-md p-4 bg-white">
+        <div className="w-full h-32 justify-center mb-4 rounded-md overflow-hidden">
           <img
             src={databaseService.getFilePreview(featuredImage)}
             alt={title}
-            className="rounded-xl"
+            className="h-full w-full object-cover"
           />
         </div>
         <h2 className="text-xl font-bold">{title}</h2>

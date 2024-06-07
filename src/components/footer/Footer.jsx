@@ -4,8 +4,8 @@ import { Container } from "../../components";
 
 const Footer = () => {
   return (
-    <footer className="text-gray-600 mt-14 w-full">
-        <Container>
+    <footer className="text-gray-600 mt-2 w-full">
+      <Container>
         <div className="container mx-auto flex items-center flex-col sm:flex-row py-5">
           <div className="w-6">
             <img src={logo} />
@@ -72,8 +72,8 @@ const Footer = () => {
             </a>
           </span>
         </div>
-    </Container>
-      </footer>
+      </Container>
+    </footer>
   );
 };
 
