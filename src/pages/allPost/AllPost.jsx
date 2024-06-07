@@ -20,7 +20,7 @@ const AllPost = () => {
             <div className="text-center text-2xl w-full">There is no post</div>
           ) : (
             posts.map((post) => (
-              <div key={post.$id} className="p-2 w-1/4">
+              <div key={post.$id}>
                 <PostCard {...post} />
               </div>
             ))

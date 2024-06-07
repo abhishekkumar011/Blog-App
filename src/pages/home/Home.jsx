@@ -23,7 +23,7 @@ const Home = () => {
                 <h1 className="text-2xl font-bold text-center mb-5 font-mono text-gray-800">
                   Blog APP
                 </h1>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-center">
                   In the digital era, blogging has become an integral part of
                   online communication, allowing individuals to express their
                   thoughts, share knowledge, and engage with communities.
